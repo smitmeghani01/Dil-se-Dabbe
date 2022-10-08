@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <!---<title> Responsive Registration Form | CodingLab </title>--->
+    <link rel="stylesheet" href="/sellerRegPage/sellerRegPage.css">
+    <title>Seller register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">Registration</div>
+        <div class="content">
+            <form action="/newSeller" method="post">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Restraunt Name</span>
+                        <input type="text" placeholder="Enter name" name="name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Street Name</span>
+                        <input type="text" placeholder="Enter Street Name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="text" placeholder="Enter email" name="email" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Phone Number</span>
+                        <input type="tel" placeholder="Enter number" name="phoneNo" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Password</span>
+                        <input type="password" placeholder="Enter password" name="password" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Confirm Password</span>
+                        <input type="password" placeholder="Confirm password" name="reEnterPass" required>
+                    </div>
+                </div>
+
+                <!-- Camera input
+                <div class="button-section">
+                    <div class="button btn">
+                        <a href="https://www.google.com/maps" target="_blank"><button type="button">Google Maps</button></a>
+                    </div>
+                    <div class="camera">
+                        <button type="button" class="btn camera-btn">Camera</button>
+                        <button type="button" id="capture" class="hide">Capture</button>
+                        <!-- <video id="player" class="hide" controls autoplay></video> -->
+                        <!-- <input type="file" name="image" /> -->
+                        <!-- <input type="" /> -->
+                        <!-- <canvas id="canvas" width="320" height="240" class="hide"></canvas> -->
+                    <!-- </div>
+                </div>
+                <div class="imageURLAccess">
+                    <input type="hidden" name="imageURL" value="" />
+                </div>
+
+                <br /> --> 
+                <div class="input-box">
+                    <span class="details">Upload Restaurant Image</span>
+                </div>
+                <input id="uploadImage" type="file" name="imageURL" required>
+
+                <div class="button">
+                    <input id="submitBtn" type="submit" value="Register">
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
