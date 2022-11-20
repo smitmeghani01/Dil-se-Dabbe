@@ -14,8 +14,8 @@
  * @version   4.1.1
  */
 
-//! moment.js
+/*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
 
-//! moment.js language configuration
+//! moment.js
 
 //! moment.js locale configuration

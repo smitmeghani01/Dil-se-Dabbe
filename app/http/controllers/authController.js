@@ -39,6 +39,9 @@ function authController() {
         register(req, res) {
             res.render('auth/register')
         },
+        sellerRegister(req,res){
+            res.render('/auth/sellerRegPage')
+        },
         async postRegister(req, res) {
          const { name, email, password }   = req.body
          // Validate request 
