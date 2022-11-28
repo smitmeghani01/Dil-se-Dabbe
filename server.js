@@ -13,12 +13,18 @@ const passport = require('passport')
 const Emitter = require('events')
 
 // Database connection
-mongoose.connect(process.env.MONGO_CONNECTION_URL, { useNewUrlParser: true, useCreateIndex:true, useUnifiedTopology: true, useFindAndModify : true });
-const connection = mongoose.connection;
-connection.once('open', () => {
+mongoose.connect(process.env.MONGO_CONNECTION_URL, 
+    { 
+        useNewUrlParser: true, 
+        useCreateIndex:true, 
+        useUnifiedTopology: true, 
+        useFindAndModify : true 
+    });
+    const connection = mongoose.connection;
+    connection.once('open', () => {
     console.log('Database connected...');
-}).catch(err => {
-    console.log('Connection failed...')
+    }).catch(err => {
+        console.log('Connection failed...')
 });
 
 
@@ -72,8 +78,8 @@ app.use((req, res) => {
 })
 
 const server = app.listen(PORT , () => {
-            console.log(`Listening on port ${PORT}`)
-        })
+    console.log(`Listening on port ${PORT}`)
+})
 
 // Socket
 
@@ -93,3 +99,4 @@ eventEmitter.on('orderPlaced', (data) => {
     io.to('adminRoom').emit('orderPlaced', data)
 })
 
+module.exports = server

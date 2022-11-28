@@ -3,7 +3,7 @@ function auth(req, res, next) {
         console.log('auth pass hua')
         return next()
     }
-    console.log('auth fail hua');
+    console.log('*******Authentication Failed********');
     return res.redirect('/login')
 }
 
