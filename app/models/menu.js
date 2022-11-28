@@ -21,4 +21,4 @@ const validateMenuItem = (data) => {
 };
 
 module.exports = mongoose.model('Menu', menuSchema)
-module.exports = validateMenuItem 
+// module.exports = validateMenuItem 

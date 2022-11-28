@@ -20,4 +20,4 @@ const validateUser = (data) =>{
     return schema.validate(data);
 }
 module.exports = mongoose.model('User', userSchema)
-module.exports = validateUser
+// module.exports = validateUser

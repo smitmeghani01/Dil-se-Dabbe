@@ -38,4 +38,4 @@ const validateOrder = (data) => {
 
 
 module.exports = mongoose.model('Order', orderSchema)
-module.exports = {validateOrder}
+// module.exports = {validateOrder}
