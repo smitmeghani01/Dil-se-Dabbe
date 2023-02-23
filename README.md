@@ -7,10 +7,7 @@ concepts are encompassed by the general scope of the Restaurant Menu and Orderin
 The first pertains to the replacement of paper-based menus using an electronic format, the second
 relates to a complementary electronic strategy for the front of house handling of a customer’s order
 and the third surrounds the process of transferring said electronic orders to the kitchen for
-preparation. It should be noted that while the suggested strategy incorporates the use of various
-hardware components, the primary focus of the presented SRS relates to the constituent software
-elements.The system contains full accountability and logging systems, and supports supervisor
-actions to account for exceptional circumstances
+preparation. 
 
 
 
